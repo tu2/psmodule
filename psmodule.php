@@ -47,7 +47,7 @@ class PsModule extends Module
   public function uninstall()
   {
     if (!parent::uninstall() ||
-      !Configuration::deleteByName('MYMODULE_NAME')
+      !Configuration::deleteByName('PSMODULE_NAME')
     )
       return false;
  
