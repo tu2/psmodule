@@ -28,4 +28,29 @@ class PsModule extends Module
     if (!Configuration::get('PSMODULE_NAME'))      
       $this->warning = $this->l('No name provided');
   }
+  
+  public function install()
+  {
+    if (Shop::isFeatureActive())
+      Shop::setContext(Shop::CONTEXT_ALL);
+ 
+    if (!parent::install() ||
+      !$this->registerHook('leftColumn') ||
+      !$this->registerHook('header') ||
+      !Configuration::updateValue('PSMODULE_NAME', 'Test')
+    )
+      return false;
+ 
+    return true;
+  }
+  
+  public function uninstall()
+  {
+    if (!parent::uninstall() ||
+      !Configuration::deleteByName('MYMODULE_NAME')
+    )
+      return false;
+ 
+    return true;
+  }
 }
