@@ -29,6 +29,9 @@ class PsModule extends Module
     if (!Configuration::get('PSMODULE_NAME'))      
       $this->warning = $this->l('No name provided');
   }
+  /**
+    * @ This suppose to be a comment
+    */
   
   public function install()
   {
