@@ -8,9 +8,13 @@ if (!defined('_PS_VERSION_'))
 	exit;
 
 class PsModule extends Module
+    
 {
+    
   public function __construct()
+      
   {
+      
     $this->name = 'psmodule';
     $this->tab = 'front_office_features';
     $this->version = '1.0.0';
@@ -28,13 +32,17 @@ class PsModule extends Module
  
     if (!Configuration::get('PSMODULE_NAME'))      
       $this->warning = $this->l('No name provided');
+    
   }
+  
   /**
     * @ This suppose to be a comment
     */
   
   public function install()
+      
   {
+      
     if (Shop::isFeatureActive())
       Shop::setContext(Shop::CONTEXT_ALL);
  
@@ -42,13 +50,16 @@ class PsModule extends Module
       !$this->registerHook('leftColumn') ||
       !$this->registerHook('header') ||
       !Configuration::updateValue('PSMODULE_NAME', 'Test')
+          
     )
       return false;
  
     return true;
+    
   }
   
   public function uninstall()
+      
   {
     if (!parent::uninstall() ||
       !Configuration::deleteByName('PSMODULE_NAME')
@@ -56,5 +67,6 @@ class PsModule extends Module
       return false;
  
     return true;
+    
   }
 }
