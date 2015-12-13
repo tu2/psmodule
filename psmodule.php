@@ -35,9 +35,10 @@ class PsModule extends Module
     
   }
   
-  /**
-    * @ This suppose to be a comment
-    */
+  /*
+   * @ This is the install method. Pay attention to the data inserted into the database.
+   * When uninstalled the same values must be deleted from the database.
+   */
   
   public function install()
       
@@ -58,6 +59,10 @@ class PsModule extends Module
     
   }
   
+  /*
+   * @ This is the uninstall method. Pay attention to the data installed into the database.
+   * When uninstalled the same values must be deleted from the database.
+   */
   public function uninstall()
       
   {
