@@ -1,8 +1,8 @@
 <?php
 
 /*
-* Version 1.0.0
-*/
+ * Version 1.0.0
+ */
 
 if (!defined('_PS_VERSION_'))
 	exit;
@@ -36,7 +36,7 @@ class PsModule extends Module
   }
   
   /*
-   * @ This is the install method. Pay attention to the data inserted into the database.
+   * @ The install method. Pay attention to the data inserted into the database.
    * When uninstalled the same values must be deleted from the database.
    */
   
@@ -60,7 +60,7 @@ class PsModule extends Module
   }
   
   /*
-   * @ This is the uninstall method. Pay attention to the data installed into the database.
+   * @ The uninstall method. Pay attention to the data installed into the database.
    * When uninstalled the same values must be deleted from the database.
    */
   public function uninstall()
