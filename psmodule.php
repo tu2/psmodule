@@ -36,8 +36,9 @@ class PsModule extends Module
   }
   
   /*
-   * @ The install method. Pay attention to the data inserted into the database.
-   * When uninstalled the same values must be deleted from the database.
+   * @ The install method. If the module performs actions on installation, 
+   * such as checking PS's settings or registering its own settings in the database,     
+   * it is highly recommended to change them back, or remove them, when uninstalling the module.
    */
   
   public function install()
@@ -60,8 +61,8 @@ class PsModule extends Module
   }
   
   /*
-   * @ The uninstall method. Pay attention to the data installed into the database.
-   * When uninstalled the same values must be deleted from the database.
+   * @ The uninstall method. Removes all the tables and values inserted into the database at install time.
+   *
    */
   public function uninstall()
       
