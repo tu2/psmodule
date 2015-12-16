@@ -1,6 +1,7 @@
 <?php
 
 /*
+ * Example module for PrestaShop e-commerce
  * Version 1.0.0
  */
 
@@ -61,7 +62,7 @@ class PsModule extends Module
   }
   
   /*
-   * @ The uninstall method. Removes all the tables and values inserted into the database at install time.
+   * @ The uninstall method. Make sure it removes all tables inserted into database at install time.
    *
    */
   public function uninstall()
