@@ -1,5 +1,5 @@
-// how to add a comment?
 <?xml version="1.0" encoding="UTF-8" ?>
+<!--If it doesn't exist, this file will be automaticly created-->
         <module>
             <name>psmodule</name>
             <displayName><![CDATA[Ps module]]></displayName>
