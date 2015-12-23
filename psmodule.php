@@ -71,4 +71,13 @@ class PsModule extends Module
         return true;
     
     }
+    
+    /*
+     * @ TODO:
+     * - add some functionality through module controlers
+     * - display something on the front page making use of 'hooks'
+     * - add some style in .css file
+     * - create the template files
+    */
+    
 }
