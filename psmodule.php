@@ -80,4 +80,29 @@ class PsModule extends Module
      * - create the template files
     */
     
+    /*
+     * @getContent() method will make a 'Configure' link appear in the back office with the option of oppwning a configuration page
+     *
+    */
+    
+    public function getContent()
+    {
+        $output = null;
+ 
+        if (Tools::isSubmit('submit'.$this->name))
+        {
+            $ps_module_name = strval(Tools::getValue('PSMODULE_NAME'));
+            if (!$ps_module_name
+              || empty($ps_module_name)
+              || !Validate::isGenericName($ps_module_name))
+                $output .= $this->displayError($this->l('Invalid Configuration value'));
+            else
+            {
+                Configuration::updateValue('PSMODULE_NAME', $ps_module_name);
+                $output .= $this->displayConfirmation($this->l('Settings updated'));
+            }
+        }
+        return $output.$this->displayForm();
+    }
+    
 }
