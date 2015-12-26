@@ -134,7 +134,12 @@ class PsModule extends Module
                 'class' => 'button'
             )
         );
-     
+        
+        /*
+         * HelperForm is one of the helper methods along with HelperOptions, HelperList, HelperView and HelperHelpAccess that enable you to generate       
+         * standard HTML elements for the back office as well as for module configuration pages
+        */
+        
         $helper = new HelperForm();
      
         // Module, token and currentIndex
