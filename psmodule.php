@@ -140,6 +140,8 @@ class PsModule extends Module
          * standard HTML elements for the back office as well as for module configuration pages
          * $helper->module: requires the instance of the module that will use the form
          * $helper->name_controller: requires the name of the module
+         * $helper->token: requires a unique token for the module
+         * $helper->currentIndex
          *
         */
         
