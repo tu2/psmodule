@@ -142,6 +142,9 @@ class PsModule extends Module
          * $helper->name_controller: requires the name of the module
          * $helper->token: requires a unique token for the module
          * $helper->currentIndex
+         * $helper->default_form_language: requires the default language for the shop
+         * $helper->allow_employee_form_lang: requires the default language for the shop
+         * $helper->title:
          *
         */
         
@@ -177,7 +180,8 @@ class PsModule extends Module
      
         // Load current value
         $helper->fields_value['PSMODULE_NAME'] = Configuration::get('PSMODULE_NAME');
-     
+        
+        // generateForm() method
         return $helper->generateForm($fields_form);
     }
 }
