@@ -136,8 +136,8 @@ class PsModule extends Module
         );
         
         /*
-         * HelperForm is one of the helper methods along with HelperOptions, HelperList, HelperView and HelperHelpAccess that enable you to generate       
-         * standard HTML elements for the back office as well as for module configuration pages
+         * HelperForm is one of the helper methods along with HelperOptions, HelperList, HelperView and HelperHelpAccess        
+         * that enable you to generate standard HTML elements for the back office as well as for module configuration pages
          * $helper->module: requires the instance of the module that will use the form
          * $helper->name_controller: requires the name of the module
          * $helper->token: requires a unique token for the module
