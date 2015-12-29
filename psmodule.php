@@ -138,13 +138,14 @@ class PsModule extends Module
         /*
          * HelperForm is one of the helper methods along with HelperOptions, HelperList, HelperView and HelperHelpAccess        
          * that enable you to generate standard HTML elements for the back office as well as for module configuration pages
-         * $helper->module: requires the instance of the module that will use the form
-         * $helper->name_controller: requires the name of the module
-         * $helper->token: requires a unique token for the module
-         * $helper->currentIndex
-         * $helper->default_form_language: requires the default language for the shop
-         * $helper->allow_employee_form_lang: requires the default language for the shop
-         * $helper->title:
+         *
+         * $helper->module = $this; requires the instance of the module that will use the form
+         * $helper->name_controller = $this->name; requires the name of the module
+         * $helper->token = Tools::getAdminTokenLite('AdminModules'); requires a unique token for the module
+         * $helper->currentIndex = AdminController::$currentIndex.'&configure='.$this->name;
+         * $helper->default_form_language: requires the default language for the shop.
+         * $helper->allow_employee_form_lang: requires the default language for the shop.
+         * $helper->title = $this->displayName; requires the title for the form.
          *
         */
         
