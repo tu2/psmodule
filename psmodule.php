@@ -146,6 +146,8 @@ class PsModule extends Module
          * $helper->default_form_language: requires the default language for the shop.
          * $helper->allow_employee_form_lang: requires the default language for the shop.
          * $helper->title = $this->displayName; requires the title for the form.
+         * $helper->show_toolbar: requires a boolean value – whether the toolbar is displayed or not
+         * $helper->toolbar_scroll: requires a boolean value – whether the toolbar is always visible when scrolling or not
          *
         */
         
