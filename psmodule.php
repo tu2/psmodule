@@ -148,6 +148,7 @@ class PsModule extends Module
          * $helper->title = $this->displayName; requires the title for the form.
          * $helper->show_toolbar: requires a boolean value – whether the toolbar is displayed or not
          * $helper->toolbar_scroll: requires a boolean value – whether the toolbar is always visible when scrolling or not
+         * $helper->submit_action = 'submit'.$this->name; requires the action attribute for the form's <submit> tag
          *
         */
         
