@@ -106,6 +106,7 @@ class PsModule extends Module
     }
     
     /*
+     * Configuration Page [Back Office]
      * @displayForm method displays the configuration form using some of the PS methods
      *
     */
@@ -149,6 +150,8 @@ class PsModule extends Module
          * $helper->show_toolbar: requires a boolean value – whether the toolbar is displayed or not
          * $helper->toolbar_scroll: requires a boolean value – whether the toolbar is always visible when scrolling or not
          * $helper->submit_action = 'submit'.$this->name; requires the action attribute for the form's <submit> tag
+         * $helper->toolbar_btn: requires the buttons that are displayed in the toolbar. In our example, the "Save" button and the "Back" button
+         * $helper->fields_value[]: this is where we can define the value of the named tag
          *
         */
         
