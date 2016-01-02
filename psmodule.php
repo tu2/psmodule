@@ -74,14 +74,19 @@ class PsModule extends Module
     
     /*
      * @ TODO:
-     * - add some functionality through module controlers
+     * 
      * - display something on the front page making use of 'hooks'
      * - add some style in .css file
      * - create the template files
     */
     
-    /*
-     * @getContent() method will make a 'Configure' link appear in the back office with the option of oppwning a configuration page
+    /* 
+     * @getContent() method will make a 'Configure' link appear in the back office with the option of opening a configuration page
+     * This method will make use of some of PS 'tools':
+     * Tools::isSubmit() is a PrestaShop-specific method, which checks if the indicated form has been validated
+     * Tools:getValue() is a PrestaShop-specific method, which retrieve the content of the POST or GET array 
+     * in order to get the value of the specified variable. In this case, we retrieve the value of the PSMODULE_NAME form variable,
+     * turn its value into a text string using the strval() method, and stores it in the $ps_module_name PHP variable
      *
     */
     
