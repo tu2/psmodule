@@ -34,7 +34,7 @@ class PsModule extends Module
     }
   
     /*
-     * @ The install method. If the module performs actions on installation, 
+     * @ The install() method of our class. If the module performs actions on installation, 
      * such as checking PS's settings or registering its own settings in the database,     
      * it is highly recommended to change them back, or remove them, when uninstalling the module.
     */
