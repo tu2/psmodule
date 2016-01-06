@@ -143,10 +143,9 @@ class PsModule extends Module
         
         /*
          * HelperForm is one of the helper methods along with HelperOptions, HelperList, HelperView and HelperHelpAccess        
-         * that enable you to generate standard HTML elements for the back office as well as for module configuration pages
+         * that enable you to generate standard HTML elements for the back office as well as for module configuration pages.
          *
-         * After the class is instantiated we can make use of some of its methods:
-         *
+         * Example of some of the HelperForm methods:
          * $helper->module = $this; requires the instance of the module that will use the form
          * $helper->name_controller = $this->name; requires the name of the module
          * $helper->token = Tools::getAdminTokenLite('AdminModules'); requires a unique token for the module
