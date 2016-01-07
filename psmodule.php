@@ -1,8 +1,9 @@
 <?php
 
 /*
- * Example module for PrestaShop e-commerce
- * Version 1.0.0
+ * Example module for PrestaShop e-commerce online shop
+ * For more info about PrestaShop visit https://www.prestashop.com/en/
+ * Module Version 1.0.0
 */
 
 if (!defined('_PS_VERSION_'))
