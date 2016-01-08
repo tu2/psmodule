@@ -73,13 +73,6 @@ class PsModule extends Module
     
     }
     
-    /*
-     * @ TODO:
-     * 
-     * - display something on the front page making use of 'hooks'
-     * - add some style in .css file
-     * - create the template files
-    */
     
     /* 
      * @getContent() method will make a 'Configure' link appear in the back office with the option of opening a configuration page
