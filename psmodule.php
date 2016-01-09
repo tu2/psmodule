@@ -2,7 +2,8 @@
 
 /*
  * Example module for PrestaShop e-commerce online shop
- * For more info about PrestaShop visit https://www.prestashop.com/en/
+ * For more info about PrestaShop visit https://www.prestashop.com
+ * For a glimpse of what this module does have a look at README.md
  * Module Version 1.0.0
 */
 
