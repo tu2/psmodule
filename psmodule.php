@@ -137,10 +137,13 @@ class PsModule extends Module
         );
         
         /*
-         * HelperForm is one of the helper methods along with HelperOptions, HelperList, HelperView and HelperHelpAccess        
-         * that enable you to generate standard HTML elements for the back office as well as for module configuration pages.
+         * This helper classes are not very well documented. Read the scripts in /classes/helper/!
+         * /classes/helper/HelperForm.php
+         * /classes/helper/HelperOption.php ...
+         * HelperForm() along with HelperOptions(), HelperList(), HelperView() and HelperHelpAccess()???        
+         * enable you to generate standard HTML elements for the back office as well as for module configuration pages (tpl_vars for template files)
          *
-         * Example of some of the HelperForm methods:
+         * Example:
          * $helper->module = $this; requires the instance of the module that will use the form
          * $helper->name_controller = $this->name; requires the name of the module
          * $helper->token = Tools::getAdminTokenLite('AdminModules'); requires a unique token for the module
@@ -158,13 +161,13 @@ class PsModule extends Module
         
         $helper = new HelperForm();
      
-        // Module, token and currentIndex
+        // Module, name_controller, token and currentIndex
         $helper->module = $this;
         $helper->name_controller = $this->name;
         $helper->token = Tools::getAdminTokenLite('AdminModules');
         $helper->currentIndex = AdminController::$currentIndex.'&configure='.$this->name;
      
-        // Language
+        // Language related settings
         $helper->default_form_language = $default_lang;
         $helper->allow_employee_form_lang = $default_lang;
      
