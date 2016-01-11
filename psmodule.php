@@ -77,12 +77,12 @@ class PsModule extends Module
     
     
     /* 
-     * @getContent() method will make a 'Configure' link appear in the back office with the option of opening a configuration page
+     * @getContent() will make a 'Configure' link appear in the back office with the option of opening a configuration page
      * This method will make use of some of the PS 'tools':
      * Tools::isSubmit() is a PrestaShop-specific method, which checks if the indicated form has been validated
      * Tools:getValue() is a PrestaShop-specific method, which retrieve the content of the POST or GET array 
      * in order to get the value of the specified variable. In this case, we retrieve the value of the PSMODULE_NAME form variable,
-     * turn its value into a text string using the strval() method, and stores it in the $ps_module_name PHP variable
+     * turn its value into a text string using the strval() method, and stores it in the variable ($ps_module_name)
      *
     */
     
@@ -108,7 +108,7 @@ class PsModule extends Module
     
     /*
      * Configuration Page [Back Office]
-     * @displayForm method displays the configuration form using some of the PS methods
+     * @displayForm() is a PS helper class that helps you create forms
      *
     */
     
@@ -138,7 +138,7 @@ class PsModule extends Module
         );
         
         /*
-         * This helper classes are not very well documented. Read the scripts in /classes/helper/!
+         * This helper classes are not very well documented. Read the scripts in /classes/helper/
          * /classes/helper/HelperForm.php
          * /classes/helper/HelperOption.php ...
          * HelperForm() along with HelperOptions(), HelperList(), HelperView() and HelperHelpAccess()???        
