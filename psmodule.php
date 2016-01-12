@@ -60,7 +60,7 @@ class PsModule extends Module
     }
   
     /*
-     * @ The uninstall method. Make sure it removes all tables inserted into database at install time.
+     * @ The uninstall method. Make sure it removes from the db all tables created at install time.
      *
     */
     public function uninstall()
