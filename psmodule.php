@@ -196,4 +196,9 @@ class PsModule extends Module
         // generateForm() method
         return $helper->generateForm($fields_form);
     }
+    
+    public function displayPage()
+    {
+        // something to display on a page -> create a controller
+    }
 }
