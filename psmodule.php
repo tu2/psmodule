@@ -201,7 +201,7 @@ class PsModule extends Module
     
     public function hookDisplayLeftColumn($params)
     {        
-        //set the template's name variable
+        //set the template's name variable for smarty
         $this->context->smarty->assign(
             array(
                 'ps_module_name' => Configuration::get('PSMODULE_NAME'),
