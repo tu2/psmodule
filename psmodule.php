@@ -200,23 +200,24 @@ class PsModule extends Module
     // A method to attach the code to specific PS hooks [hookDisplayLeftColumn(); hookDisplayRightColumn() hookDisplayHeader()]
     
     public function hookDisplayLeftColumn($params)
-    {
-      $this->context->smarty->assign(
-          array(
-              'ps_module_name' => Configuration::get('PSMODULE_NAME'),
-              'ps_module_link' => $this->context->link->getModuleLink('psmodule', 'display')
-          )
-      );
-      return $this->display(__FILE__, 'psmodule.tpl');
+    {        
+        //set the template's name variable
+        $this->context->smarty->assign(
+            array(
+                'ps_module_name' => Configuration::get('PSMODULE_NAME'),
+                'ps_module_link' => $this->context->link->getModuleLink('psmodule', 'display')
+            )
+        );
+        return $this->display(__FILE__, 'psmodule.tpl');
     }
    
     public function hookDisplayRightColumn($params)
     {
-      return $this->hookDisplayLeftColumn($params);
+        return $this->hookDisplayLeftColumn($params);
     }
    
     public function hookDisplayHeader()
     {
-      $this->context->controller->addCSS($this->_path.'css/psmodule.css', 'all');
+        $this->context->controller->addCSS($this->_path.'css/psmodule.css', 'all');
     }
 }
