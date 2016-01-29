@@ -6,7 +6,7 @@
        {if isset($my_module_name) && $my_module_name}
            {$my_module_name}
        {else}
-           World
+           Hello World
        {/if}
        !       
     </p>   
