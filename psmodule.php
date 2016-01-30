@@ -206,7 +206,7 @@ class PsModule extends Module
             array(
                 'ps_module_name' => Configuration::get('PSMODULE_NAME'),
                 'ps_module_link' => $this->context->link->getModuleLink('psmodule', 'display')
-            )
+            )   'ps_module_message' => $this->l('This is a simple text')
         );
         return $this->display(__FILE__, 'psmodule.tpl');
     }
