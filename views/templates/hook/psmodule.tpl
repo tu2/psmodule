@@ -7,8 +7,7 @@
            {$my_module_name}
        {else}
            Hello from the other side!
-       {/if}
-             
+       {/if}      
     </p>   
     <ul>
       <li><a href="{$my_module_link}" title="Click this link">Click me!</a></li>
