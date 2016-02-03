@@ -1,6 +1,6 @@
 <!-- Block mymodule -->
 <div id="mymodule_block_home" class="block">
-  <h4>Side Tab</h4>
+  <h4>Test PS Module</h4>
   <div class="block_content">
     <p>
        {if isset($my_module_name) && $my_module_name}
