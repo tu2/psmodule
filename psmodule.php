@@ -220,6 +220,6 @@ class PsModule extends Module
     public function hookDisplayHeader()
     {
         //generates the correct <link> tag to the CSS file indicated in parameters
-        $this->context->controller->addCSS($this->_path.'css/psmodule.css', 'all');
+        $this->context->controller->addCSS($this->_path.'psmodule.css', 'all');
     }
 }
