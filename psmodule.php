@@ -197,11 +197,15 @@ class PsModule extends Module
         return $helper->generateForm($fields_form);
     }
     
-    // A method to attach the code to specific PS hooks [hookDisplayLeftColumn(); hookDisplayRightColumn() hookDisplayHeader()]
+    /*
+     * Setup view template files
+     * A method to attach the code to specific PS hooks [hookDisplayLeftColumn(); hookDisplayRightColumn() hookDisplayHeader()]
+     * EX: hookDisplayLeftColumn affects views/templates/hook/psmodule.tpl
+    */
     
     public function hookDisplayLeftColumn($params)
     {        
-        //set the template's name variable for smarty
+        //set the template's name variable for smarty for views/templates/hook/psmodule.tpl
         $this->context->smarty->assign(
             array(
                 'ps_module_name' => Configuration::get('PSMODULE_NAME'),
