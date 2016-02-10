@@ -1,6 +1,7 @@
 /* psmodule basic style
 
-#mymodule_block_home p {
-  font-size: 150%;
-  font-style:italic;
+div#mymodule_block_home p {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
 }
