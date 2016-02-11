@@ -207,7 +207,7 @@ class PsModule extends Module
     {        
         // set the template's name variable for smarty for views/templates/hook/psmodule.tpl
         // the 'ps_module_link' is for 'views/templates/front/display.tpl'
-        $this->context->controller->addCSS($this->_path.'psmodule.css', 'all');
+        $this->context->controller->addCSS($this->_path.'views/css/psmodule.css', 'all');
         $this->context->smarty->assign(
             array(
                 'ps_module_name' => Configuration::get('PSMODULE_NAME'),
