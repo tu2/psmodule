@@ -1,6 +1,6 @@
-/* psmodule basic style
+/* psmodule basic style */
 
-div#mymodule_block_home p {
+#mymodule_block_home p {
   color: red;
   font-size: 14px;
   font-weight: bold;
