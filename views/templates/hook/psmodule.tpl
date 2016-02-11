@@ -1,6 +1,6 @@
 
 <!-- Block psmodule -->
-<div id="mymodule_block_home" class="block">
+<div id="psmodule_block_home" class="block">
     <h4>Test PS Module</h4>
     <div class="block_content">
         <p>
