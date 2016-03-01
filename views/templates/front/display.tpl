@@ -2,6 +2,8 @@
  * Todo: add proper 'breadcrumb'
 *}
 
+{capture name=path}{l s='PsModule Display' mod='psmodule'}{/capture}
+
 <div class="row">
 	<div class="col-xs-12">
 		<h1>The Header of the page</h1>
