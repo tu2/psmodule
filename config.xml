@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--If this file doesn't exist, it will be automatically created-->
         <module>
             <name>psmodule</name>
             <displayName><![CDATA[Ps Module]]></displayName>
