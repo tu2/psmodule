@@ -3,7 +3,6 @@
 /*
  * Example module for PrestaShop e-commerce online shop
  * For more information about PrestaShop visit https://www.prestashop.com
-
  * This code follows the tutorial that can be found at http://doc.prestashop.com/display/PS16/Creating+a+PrestaShop+Module
  *
  * Module Version 1.0.0
