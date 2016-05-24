@@ -107,7 +107,7 @@ class PsModule extends Module
     }
     
     /*
-     * Configuration Page [Back Office]
+     * Module Configuration [Back Office]
      * @displayForm() is a PS class that helps you create forms
      *
     */
