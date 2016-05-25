@@ -11,6 +11,7 @@ class psmoduledisplayModuleFrontController extends ModuleFrontController
     {
         parent::initContent();
         
+        // template disply
         // views/template/front/display.tpl
         $this->setTemplate('display.tpl');
     }
