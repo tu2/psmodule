@@ -6,6 +6,7 @@
 
 class psmoduledisplayModuleFrontController extends ModuleFrontController
 {
+    
     public function initContent()
     
     {
