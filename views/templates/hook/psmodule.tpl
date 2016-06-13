@@ -6,6 +6,7 @@
 <div id="psmodule_block_home" class="block">
     <h4>Test PS Module</h4>
     <div class="block_content">
+        <p>Module <strong>side box</strong></p>
         <p>
         {if isset($ps_module_name) && $ps_module_name}
             {$ps_module_name}
