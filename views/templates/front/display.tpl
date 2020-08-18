@@ -1,6 +1,4 @@
-{*
- * Module version 1.0.0
-*}
+{* Module version 1.0.0 *}
 
 {capture name=path}{l s='PsModule Display' mod='psmodule'}{/capture}
 
