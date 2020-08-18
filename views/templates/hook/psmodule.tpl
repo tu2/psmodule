@@ -1,6 +1,4 @@
-{*
- * Module version 1.0.0
-*}
+ {* Module version 1.0.0 *}
 
 <!-- Block psmodule -->
 <div id="psmodule_block_home" class="block">
