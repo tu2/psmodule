@@ -92,11 +92,11 @@ class PsModule extends Module
     {	
 	/**
          * If values have been submitted in the form, process.
-         */
+         
         if (((bool)Tools::isSubmit('submitMymoduleModule')) == true) {
             $this->postProcess();
         }    
-	
+	*/
         $output = null;
  
         if (Tools::isSubmit('submit'.$this->name))
