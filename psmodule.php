@@ -85,7 +85,8 @@ class PsModule extends Module
      * in order to get the value of the specified variable. In this case, we retrieve the value of the PSMODULE_NAME form variable,
      * turn its value into a text string using the strval() method, and stores it in the variable ($ps_module_name)
      *
-    */
+     * Load the configuration form
+     */
     
     public function getContent()
     {
