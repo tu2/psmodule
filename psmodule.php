@@ -64,17 +64,7 @@ class PsModule extends Module
      * @ The uninstall method. Make sure it removes from the db all tables created at install time.
      *
     */
-    public function uninstall()
-    
-    {
-        if (!parent::uninstall() ||
-            !Configuration::deleteByName('PSMODULE_NAME')
-        )
-            return false;
- 
-        return true;
-    
-    }
+   
     
     
     /* 
