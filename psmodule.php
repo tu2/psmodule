@@ -65,7 +65,17 @@ class PsModule extends Module
      *
     */
    
+    public function uninstall()
     
+    {
+        if (!parent::uninstall() ||
+            !Configuration::deleteByName('PSMODULE_NAME')
+        )
+            return false;
+ 
+        return true;
+    
+    }
     
     /* 
      * @getContent() will make a 'Configure' link appear in the back office with the option of opening a configuration page
