@@ -1,8 +1,5 @@
 <?php
 
-/*
- * Module Version 1.0.0 
-*/
 
 class psmoduledisplayModuleFrontController extends ModuleFrontController
 {
