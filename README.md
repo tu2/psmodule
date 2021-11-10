@@ -6,7 +6,7 @@ With Prestashop 1.7 you can generate a skeleton module online with [PrestaShop -
 
 TODO:
 ----
-- test with latest PS version.
-- remove compatibility with PS 1.6
-- make front more visible
-- add backoffice more functionality 
+- [] test with latest PS version.
+- [] remove compatibility with PS 1.6
+- [] make front more visible
+- [] add backoffice more functionality 
