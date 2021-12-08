@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Module Version 1.0.0
+ * 
 */
 
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
