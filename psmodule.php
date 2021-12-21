@@ -46,17 +46,7 @@ class PsModule extends Module
     public function install()
     
     {
-        if (Shop::isFeatureActive())
-            Shop::setContext(Shop::CONTEXT_ALL);
-          
-        if (!parent::install() &&
-            !$this->registerHook('leftColumn') &&
-            !$this->registerHook('header') &&
-            !Configuration::updateValue('PSMODULE_NAME', 'Test PS-Module')
-        )
-            return false;
- 
-        return true;
+        
     
     }
   
