@@ -5,7 +5,7 @@
 <div class="row">
 	<div class="col-xs-12">
 		<h1>The Header of the page</h1>
-        <p>This is a message from PS Module.</p>
+        	<p>This is a message from PS Module.</p>
 	</div>
 </div>
 
