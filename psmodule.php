@@ -212,20 +212,7 @@ class PsModule extends Module
      * EX: hookDisplayLeftColumn affects views/templates/hook/psmodule.tpl
     */
     
-    public function hookDisplayLeftColumn($params)
-    {        
-        // set the template's name variable for smarty for views/templates/hook/psmodule.tpl
-        // the 'ps_module_link' is for 'views/templates/front/display.tpl'
-        $this->context->controller->addCSS($this->_path.'css/psmodule.css', 'all');
-        $this->context->smarty->assign(
-            array(
-                'ps_module_name' => Configuration::get('PSMODULE_NAME'),
-                'ps_module_link' => $this->context->link->getModuleLink('psmodule', 'display'),
-                
-            )
-        );
-        return $this->display(__FILE__, 'psmodule.tpl');
-    }
+    
    
     public function hookDisplayRightColumn($params)
     {
