@@ -5,7 +5,7 @@
  *
  * TODO:
  * ADD .htaccess file,
- * Remove this coment.
+ * REMOVE this coment.
    <IfModule mod_rewrite.c>
          RewriteEngine on
          RewriteCond %{REQUEST_FILENAME} !-f
