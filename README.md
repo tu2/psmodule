@@ -5,6 +5,5 @@ An example of how to make a module for Prestashop 1.6 ( [docs](http://doc.presta
 TODO:
 ----
 
-- [ ] remove compatibility with PS 1.6
 - [ ] make front more visible
 - [ ] add backoffice functionality 
