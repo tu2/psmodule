@@ -4,8 +4,7 @@
  * Module Version 1.0.0
  *
  * TODO:
- * ADD .htaccess file,
- * REMOVE this coment.
+ * ADD .htaccess file
    <IfModule mod_rewrite.c>
          RewriteEngine on
          RewriteCond %{REQUEST_FILENAME} !-f
